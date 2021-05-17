@@ -7,6 +7,7 @@ target 'ServiceFramework' do
 
   pod 'Swinject'
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'CocoaLumberjack'
 
   target 'ServiceFrameworkTests' do
