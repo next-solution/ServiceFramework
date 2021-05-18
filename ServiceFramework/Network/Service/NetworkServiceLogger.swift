@@ -7,7 +7,7 @@
 
 import Alamofire
 
-class ApiClientLogger: EventMonitor {
+class NetworkServiceLogger: EventMonitor {
     
     let queue = DispatchQueue(label: "service.networklogger")
     
