@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol IFetcher {
+public protocol IFetcher {
     func fetchInfoAboutUsers(completion: @escaping (Result<[IUser], UserError>) -> Void)
     func fetchAvatar(url: URL, completion: @escaping (Result<Data, UserError>) -> Void)
 }
@@ -17,7 +17,7 @@ extension IFetcher {
         return NetworkService.default
     }
     
-    func fetchAvatar(url: URL, completion: @escaping (Result<Data, UserError>) -> Void) {
+    public func fetchAvatar(url: URL, completion: @escaping (Result<Data, UserError>) -> Void) {
         networkService.retrieveImage(UsersAPIs.downloadImages(url)) { result in
             switch result {
             case .success(let data):

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol IUser: Codable {
+public protocol IUser: Codable {
     var username: String { get }
     var avatarUrl: String { get }
 }

@@ -7,9 +7,11 @@
 
 import Alamofire
 
-struct GithubFetcher : IFetcher {
+public class GithubFetcher : IFetcher {
     
-    func fetchInfoAboutUsers(completion: @escaping (Result<[IUser], UserError>) -> Void) {
+    public static let `default` = GithubFetcher()
+    
+    public func fetchInfoAboutUsers(completion: @escaping (Result<[IUser], UserError>) -> Void) {
         networkService.execute(UsersAPIs.getUsers(.gitHub), model: [GithubUser].self) { result in
             switch result {
             case .success(let users):

@@ -8,11 +8,12 @@
 import Foundation
 
 public struct UserData {
+    public let serviceType: ServiceType
     public let name: String
-    public let avatar: Data
-    public let endpoint: Endpoint
+    public var avatar: Data?
     
-    public init(name: String, avatar: Data) {
+    public init(serviceType: ServiceType, name: String, avatar: Data?) {
+        self.serviceType = serviceType
         self.name = name
         self.avatar = avatar
     }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ServiceFramework'
-  s.version      = "0.0.1"
+  s.version      = "0.0.4"
   s.summary      = 'ServiceFramework.'
   s.description  = 'ServiceFramework library.'
   s.license      = { :type => 'CUSTOM' }
@@ -13,8 +13,10 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
   s.source_files = [
     "ServiceFramework/*.{swift}",
+    "ServiceFramework/Service/*.{swift}",
+    "ServiceFramework/Service/**/*.{swift}",
     "ServiceFramework/Model/*.{swift}",
-    "ServiceFramework/Network/**/*.{swift}"
+    "ServiceFramework/Network/**/*.{swift}",
   ]
 
   #Dependencies

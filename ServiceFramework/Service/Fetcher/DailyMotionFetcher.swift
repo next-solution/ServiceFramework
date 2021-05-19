@@ -7,9 +7,11 @@
 
 import Alamofire
 
-struct DailyMotionFetcher: IFetcher {
+public class DailyMotionFetcher: IFetcher {
     
-    func fetchInfoAboutUsers(completion: @escaping (Result<[IUser], UserError>) -> Void) {
+    public static let `default` = DailyMotionFetcher()
+    
+    public func fetchInfoAboutUsers(completion: @escaping (Result<[IUser], UserError>) -> Void) {
         networkService.execute(UsersAPIs.getUsers(.dailyMotion), model: DailyMotionUsers.self) { result in
             switch result {
             case .success(let users):

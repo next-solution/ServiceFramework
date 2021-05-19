@@ -12,6 +12,8 @@
 		2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE1265398B30007064E /* UsersAPIs.swift */; };
 		2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE52653A6790007064E /* Endpoint.swift */; };
 		2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE92653A8190007064E /* NetworkService.swift */; };
+		2DAD8131265528A60007064E /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD8130265528A60007064E /* ServiceType.swift */; };
+		2DAD813726552A670007064E /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD813626552A670007064E /* UserInfoService.swift */; };
 		2DDADC152652BCD4000850E8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC142652BCD4000850E8 /* UserData.swift */; };
 		2DDADC1C2652BDE3000850E8 /* IFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC1B2652BDE3000850E8 /* IFetcher.swift */; };
 		2DDADC212652BEB1000850E8 /* DailyMotionUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */; };
@@ -43,6 +45,8 @@
 		2DAD7FE1265398B30007064E /* UsersAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPIs.swift; sourceTree = "<group>"; };
 		2DAD7FE52653A6790007064E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2DAD7FE92653A8190007064E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2DAD8130265528A60007064E /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		2DAD813626552A670007064E /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
 		2DDADC142652BCD4000850E8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2DDADC1B2652BDE3000850E8 /* IFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFetcher.swift; sourceTree = "<group>"; };
 		2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionUsers.swift; sourceTree = "<group>"; };
@@ -88,7 +92,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DAD7FDA265395FA0007064E /* Service */ = {
+		2DAD7FDA265395FA0007064E /* Client */ = {
 			isa = PBXGroup;
 			children = (
 				2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */,
@@ -97,14 +101,27 @@
 				2DAD7FE52653A6790007064E /* Endpoint.swift */,
 				2DAD7FE92653A8190007064E /* NetworkService.swift */,
 			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2DAD812B265528520007064E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2DDADC422652E2DA000850E8 /* Fetcher */,
+				2DDADC342652DB99000850E8 /* IUser.swift */,
+				2DDADC142652BCD4000850E8 /* UserData.swift */,
+				2DAD8130265528A60007064E /* ServiceType.swift */,
+				2DAD813626552A670007064E /* UserInfoService.swift */,
+			);
 			path = Service;
 			sourceTree = "<group>";
 		};
 		2DDADC1A2652BDD2000850E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2DAD7FDA265395FA0007064E /* Service */,
-				2DDADC422652E2DA000850E8 /* Fetcher */,
+				2DDADC2C2652C013000850E8 /* Link.swift */,
+				2DDADC1F2652BE7C000850E8 /* Model */,
+				2DAD7FDA265395FA0007064E /* Client */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -112,10 +129,8 @@
 		2DDADC1F2652BE7C000850E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2DDADC142652BCD4000850E8 /* UserData.swift */,
 				2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */,
 				2DDADC432652E36E000850E8 /* GithubUser.swift */,
-				2DDADC342652DB99000850E8 /* IUser.swift */,
 				2DDADC382652DC18000850E8 /* UserError.swift */,
 			);
 			path = Model;
@@ -154,8 +169,7 @@
 		2DE99E482652A83100C63F9D /* ServiceFramework */ = {
 			isa = PBXGroup;
 			children = (
-				2DDADC2C2652C013000850E8 /* Link.swift */,
-				2DDADC1F2652BE7C000850E8 /* Model */,
+				2DAD812B265528520007064E /* Service */,
 				2DDADC1A2652BDD2000850E8 /* Network */,
 				2DE99E492652A83100C63F9D /* ServiceFramework.h */,
 				2DE99E4A2652A83100C63F9D /* Info.plist */,
@@ -380,6 +394,8 @@
 				2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */,
 				2DDADC1C2652BDE3000850E8 /* IFetcher.swift in Sources */,
 				2DDADC352652DB99000850E8 /* IUser.swift in Sources */,
+				2DAD813726552A670007064E /* UserInfoService.swift in Sources */,
+				2DAD8131265528A60007064E /* ServiceType.swift in Sources */,
 				2DDADC152652BCD4000850E8 /* UserData.swift in Sources */,
 				2DDADC292652BF91000850E8 /* DailyMotionFetcher.swift in Sources */,
 			);

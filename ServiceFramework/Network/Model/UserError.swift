@@ -7,6 +7,10 @@
 
 import Foundation
 
-struct UserError: Error {
-    let description: String
+public struct UserError: Error {
+    public let description: String
+    
+    init (description: String) {
+        self.description = description
+    }
 }
