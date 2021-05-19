@@ -1,5 +1,5 @@
 //
-//  ApiClientLogger.swift
+//  NetworkServiceLogger.swift
 //  ServiceFramework
 //
 //  Created by Marcin Makurat on 17/05/2021.

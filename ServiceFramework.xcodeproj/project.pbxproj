@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		261B616AB8445D54611ADD0E /* Pods_ServiceFramework_ServiceFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F045E2F81A5143255B11FF /* Pods_ServiceFramework_ServiceFrameworkTests.framework */; };
-		2D235ACB2652FFA20096AA9E /* IImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D235ACA2652FFA20096AA9E /* IImageDownloader.swift */; };
-		2D235AD5265300700096AA9E /* AFImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D235AD4265300700096AA9E /* AFImageDownloader.swift */; };
-		2DDADC112652BC5B000850E8 /* IDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC102652BC5B000850E8 /* IDataFetcher.swift */; };
+		2DAD7FDC2653960F0007064E /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */; };
+		2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE1265398B30007064E /* UsersAPIs.swift */; };
+		2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE52653A6790007064E /* Endpoint.swift */; };
+		2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE92653A8190007064E /* NetworkService.swift */; };
 		2DDADC152652BCD4000850E8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC142652BCD4000850E8 /* UserData.swift */; };
-		2DDADC1C2652BDE3000850E8 /* IApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC1B2652BDE3000850E8 /* IApiClient.swift */; };
+		2DDADC1C2652BDE3000850E8 /* IFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC1B2652BDE3000850E8 /* IFetcher.swift */; };
 		2DDADC212652BEB1000850E8 /* DailyMotionUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */; };
-		2DDADC292652BF91000850E8 /* DailyMotionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC282652BF91000850E8 /* DailyMotionApiClient.swift */; };
+		2DDADC292652BF91000850E8 /* DailyMotionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC282652BF91000850E8 /* DailyMotionFetcher.swift */; };
 		2DDADC2D2652C013000850E8 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC2C2652C013000850E8 /* Link.swift */; };
-		2DDADC312652C05D000850E8 /* ApiClientLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC302652C05D000850E8 /* ApiClientLogger.swift */; };
+		2DDADC312652C05D000850E8 /* NetworkServiceLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */; };
 		2DDADC352652DB99000850E8 /* IUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC342652DB99000850E8 /* IUser.swift */; };
 		2DDADC392652DC18000850E8 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC382652DC18000850E8 /* UserError.swift */; };
-		2DDADC3F2652E2D5000850E8 /* GithubApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC3E2652E2D5000850E8 /* GithubApiClient.swift */; };
+		2DDADC3F2652E2D5000850E8 /* GithubFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC3E2652E2D5000850E8 /* GithubFetcher.swift */; };
 		2DDADC442652E36E000850E8 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC432652E36E000850E8 /* GithubUser.swift */; };
 		2DE99E502652A83100C63F9D /* ServiceFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE99E462652A83100C63F9D /* ServiceFramework.framework */; };
 		2DE99E552652A83100C63F9D /* ServiceFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE99E542652A83100C63F9D /* ServiceFrameworkTests.swift */; };
@@ -38,18 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D235ACA2652FFA20096AA9E /* IImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IImageDownloader.swift; sourceTree = "<group>"; };
-		2D235AD4265300700096AA9E /* AFImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFImageDownloader.swift; sourceTree = "<group>"; };
-		2DDADC102652BC5B000850E8 /* IDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDataFetcher.swift; sourceTree = "<group>"; };
+		2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		2DAD7FE1265398B30007064E /* UsersAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPIs.swift; sourceTree = "<group>"; };
+		2DAD7FE52653A6790007064E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2DAD7FE92653A8190007064E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2DDADC142652BCD4000850E8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		2DDADC1B2652BDE3000850E8 /* IApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApiClient.swift; sourceTree = "<group>"; };
+		2DDADC1B2652BDE3000850E8 /* IFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFetcher.swift; sourceTree = "<group>"; };
 		2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionUsers.swift; sourceTree = "<group>"; };
-		2DDADC282652BF91000850E8 /* DailyMotionApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionApiClient.swift; sourceTree = "<group>"; };
+		2DDADC282652BF91000850E8 /* DailyMotionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionFetcher.swift; sourceTree = "<group>"; };
 		2DDADC2C2652C013000850E8 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
-		2DDADC302652C05D000850E8 /* ApiClientLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientLogger.swift; sourceTree = "<group>"; };
+		2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLogger.swift; sourceTree = "<group>"; };
 		2DDADC342652DB99000850E8 /* IUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUser.swift; sourceTree = "<group>"; };
 		2DDADC382652DC18000850E8 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
-		2DDADC3E2652E2D5000850E8 /* GithubApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiClient.swift; sourceTree = "<group>"; };
+		2DDADC3E2652E2D5000850E8 /* GithubFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFetcher.swift; sourceTree = "<group>"; };
 		2DDADC432652E36E000850E8 /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
 		2DE99E462652A83100C63F9D /* ServiceFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ServiceFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE99E492652A83100C63F9D /* ServiceFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceFramework.h; sourceTree = "<group>"; };
@@ -86,27 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D235AC92652FF820096AA9E /* ImageDownloader */ = {
+		2DAD7FDA265395FA0007064E /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				2D235ACA2652FFA20096AA9E /* IImageDownloader.swift */,
-				2D235AD4265300700096AA9E /* AFImageDownloader.swift */,
+				2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */,
+				2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */,
+				2DAD7FE1265398B30007064E /* UsersAPIs.swift */,
+				2DAD7FE52653A6790007064E /* Endpoint.swift */,
+				2DAD7FE92653A8190007064E /* NetworkService.swift */,
 			);
-			path = ImageDownloader;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		2DDADC1A2652BDD2000850E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2D235AC92652FF820096AA9E /* ImageDownloader */,
-				2DDADC422652E2DA000850E8 /* API */,
-				2DDADC1F2652BE7C000850E8 /* Models */,
-				2DDADC2C2652C013000850E8 /* Link.swift */,
+				2DAD7FDA265395FA0007064E /* Service */,
+				2DDADC422652E2DA000850E8 /* Fetcher */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		2DDADC1F2652BE7C000850E8 /* Models */ = {
+		2DDADC1F2652BE7C000850E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2DDADC142652BCD4000850E8 /* UserData.swift */,
@@ -115,18 +118,17 @@
 				2DDADC342652DB99000850E8 /* IUser.swift */,
 				2DDADC382652DC18000850E8 /* UserError.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		2DDADC422652E2DA000850E8 /* API */ = {
+		2DDADC422652E2DA000850E8 /* Fetcher */ = {
 			isa = PBXGroup;
 			children = (
-				2DDADC282652BF91000850E8 /* DailyMotionApiClient.swift */,
-				2DDADC302652C05D000850E8 /* ApiClientLogger.swift */,
-				2DDADC3E2652E2D5000850E8 /* GithubApiClient.swift */,
-				2DDADC1B2652BDE3000850E8 /* IApiClient.swift */,
+				2DDADC282652BF91000850E8 /* DailyMotionFetcher.swift */,
+				2DDADC3E2652E2D5000850E8 /* GithubFetcher.swift */,
+				2DDADC1B2652BDE3000850E8 /* IFetcher.swift */,
 			);
-			path = API;
+			path = Fetcher;
 			sourceTree = "<group>";
 		};
 		2DE99E3C2652A83100C63F9D = {
@@ -152,10 +154,11 @@
 		2DE99E482652A83100C63F9D /* ServiceFramework */ = {
 			isa = PBXGroup;
 			children = (
+				2DDADC2C2652C013000850E8 /* Link.swift */,
+				2DDADC1F2652BE7C000850E8 /* Model */,
 				2DDADC1A2652BDD2000850E8 /* Network */,
 				2DE99E492652A83100C63F9D /* ServiceFramework.h */,
 				2DE99E4A2652A83100C63F9D /* Info.plist */,
-				2DDADC102652BC5B000850E8 /* IDataFetcher.swift */,
 			);
 			path = ServiceFramework;
 			sourceTree = "<group>";
@@ -367,17 +370,18 @@
 			files = (
 				2DDADC212652BEB1000850E8 /* DailyMotionUsers.swift in Sources */,
 				2DDADC442652E36E000850E8 /* GithubUser.swift in Sources */,
-				2D235AD5265300700096AA9E /* AFImageDownloader.swift in Sources */,
-				2DDADC312652C05D000850E8 /* ApiClientLogger.swift in Sources */,
+				2DDADC312652C05D000850E8 /* NetworkServiceLogger.swift in Sources */,
 				2DDADC2D2652C013000850E8 /* Link.swift in Sources */,
-				2DDADC3F2652E2D5000850E8 /* GithubApiClient.swift in Sources */,
+				2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */,
+				2DDADC3F2652E2D5000850E8 /* GithubFetcher.swift in Sources */,
+				2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */,
 				2DDADC392652DC18000850E8 /* UserError.swift in Sources */,
-				2D235ACB2652FFA20096AA9E /* IImageDownloader.swift in Sources */,
-				2DDADC1C2652BDE3000850E8 /* IApiClient.swift in Sources */,
-				2DDADC112652BC5B000850E8 /* IDataFetcher.swift in Sources */,
+				2DAD7FDC2653960F0007064E /* URLRequestBuilder.swift in Sources */,
+				2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */,
+				2DDADC1C2652BDE3000850E8 /* IFetcher.swift in Sources */,
 				2DDADC352652DB99000850E8 /* IUser.swift in Sources */,
 				2DDADC152652BCD4000850E8 /* UserData.swift in Sources */,
-				2DDADC292652BF91000850E8 /* DailyMotionApiClient.swift in Sources */,
+				2DDADC292652BF91000850E8 /* DailyMotionFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 760753F5CCE85F0C4FBB582F /* Pods-ServiceFramework.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -552,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51760B8736ADD6D6E90E637D /* Pods-ServiceFramework.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
