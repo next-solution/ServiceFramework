@@ -7,7 +7,7 @@
 
 import Alamofire
 
-enum Endpoint {
+public enum Endpoint {
     case dailyMotion
     case gitHub
 }
@@ -32,6 +32,15 @@ extension Endpoint {
             return ["fields": "avatar_360_url,username"]
         case .gitHub:
             return nil
+        }
+    }
+    
+    var model: Decodable.Type {
+        switch self {
+        case .dailyMotion:
+            return DailyMotionUsers.self
+        case .gitHub:
+            return GithubUser.self
         }
     }
 }

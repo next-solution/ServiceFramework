@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailyMotionUsers: Decodable {
+struct DailyMotionUsers: Codable {
     let list: [DailyMotionUser]
 }
 

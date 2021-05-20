@@ -13,6 +13,6 @@ struct GithubUser: IUser {
     
     enum CodingKeys: String, CodingKey {
         case username = "login"
-        case avatarUrl = "avatar_360_url"
+        case avatarUrl = "avatar_url"
     }
 }

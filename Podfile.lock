@@ -1,16 +1,18 @@
 PODS:
-  - Alamofire (5.4.2)
+  - Alamofire (5.4.3)
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
   - CocoaLumberjack (3.7.2):
     - CocoaLumberjack/Core (= 3.7.2)
   - CocoaLumberjack/Core (3.7.2)
+  - SwiftLint (0.43.1)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - CocoaLumberjack
+  - SwiftLint
   - Swinject
 
 SPEC REPOS:
@@ -18,14 +20,16 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - CocoaLumberjack
+    - SwiftLint
     - Swinject
 
 SPEC CHECKSUMS:
-  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 5397b9bd0656d6fedb07b1bbc53840e3ccac8312
+PODFILE CHECKSUM: 574faa11a9462ab7c3e3120e4563997962214088
 
 COCOAPODS: 1.10.1

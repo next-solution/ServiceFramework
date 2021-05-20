@@ -12,17 +12,14 @@
 		2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE1265398B30007064E /* UsersAPIs.swift */; };
 		2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE52653A6790007064E /* Endpoint.swift */; };
 		2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE92653A8190007064E /* NetworkService.swift */; };
-		2DAD8131265528A60007064E /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD8130265528A60007064E /* ServiceType.swift */; };
-		2DAD813726552A670007064E /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD813626552A670007064E /* UserInfoService.swift */; };
-		2DDADC152652BCD4000850E8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC142652BCD4000850E8 /* UserData.swift */; };
+		2DAD8188265635680007064E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD8187265635680007064E /* NetworkServiceProtocol.swift */; };
 		2DDADC1C2652BDE3000850E8 /* IFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC1B2652BDE3000850E8 /* IFetcher.swift */; };
 		2DDADC212652BEB1000850E8 /* DailyMotionUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */; };
-		2DDADC292652BF91000850E8 /* DailyMotionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC282652BF91000850E8 /* DailyMotionFetcher.swift */; };
+		2DDADC292652BF91000850E8 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC282652BF91000850E8 /* Fetcher.swift */; };
 		2DDADC2D2652C013000850E8 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC2C2652C013000850E8 /* Link.swift */; };
 		2DDADC312652C05D000850E8 /* NetworkServiceLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */; };
 		2DDADC352652DB99000850E8 /* IUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC342652DB99000850E8 /* IUser.swift */; };
 		2DDADC392652DC18000850E8 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC382652DC18000850E8 /* UserError.swift */; };
-		2DDADC3F2652E2D5000850E8 /* GithubFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC3E2652E2D5000850E8 /* GithubFetcher.swift */; };
 		2DDADC442652E36E000850E8 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC432652E36E000850E8 /* GithubUser.swift */; };
 		2DE99E502652A83100C63F9D /* ServiceFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE99E462652A83100C63F9D /* ServiceFramework.framework */; };
 		2DE99E552652A83100C63F9D /* ServiceFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE99E542652A83100C63F9D /* ServiceFrameworkTests.swift */; };
@@ -45,17 +42,14 @@
 		2DAD7FE1265398B30007064E /* UsersAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPIs.swift; sourceTree = "<group>"; };
 		2DAD7FE52653A6790007064E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2DAD7FE92653A8190007064E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		2DAD8130265528A60007064E /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
-		2DAD813626552A670007064E /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
-		2DDADC142652BCD4000850E8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2DAD8187265635680007064E /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		2DDADC1B2652BDE3000850E8 /* IFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFetcher.swift; sourceTree = "<group>"; };
 		2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionUsers.swift; sourceTree = "<group>"; };
-		2DDADC282652BF91000850E8 /* DailyMotionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionFetcher.swift; sourceTree = "<group>"; };
+		2DDADC282652BF91000850E8 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		2DDADC2C2652C013000850E8 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLogger.swift; sourceTree = "<group>"; };
 		2DDADC342652DB99000850E8 /* IUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUser.swift; sourceTree = "<group>"; };
 		2DDADC382652DC18000850E8 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
-		2DDADC3E2652E2D5000850E8 /* GithubFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFetcher.swift; sourceTree = "<group>"; };
 		2DDADC432652E36E000850E8 /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
 		2DE99E462652A83100C63F9D /* ServiceFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ServiceFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE99E492652A83100C63F9D /* ServiceFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceFramework.h; sourceTree = "<group>"; };
@@ -98,8 +92,8 @@
 				2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */,
 				2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */,
 				2DAD7FE1265398B30007064E /* UsersAPIs.swift */,
-				2DAD7FE52653A6790007064E /* Endpoint.swift */,
 				2DAD7FE92653A8190007064E /* NetworkService.swift */,
+				2DAD8187265635680007064E /* NetworkServiceProtocol.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -107,13 +101,19 @@
 		2DAD812B265528520007064E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2DAD824126565A0C0007064E /* Enums */,
 				2DDADC422652E2DA000850E8 /* Fetcher */,
 				2DDADC342652DB99000850E8 /* IUser.swift */,
-				2DDADC142652BCD4000850E8 /* UserData.swift */,
-				2DAD8130265528A60007064E /* ServiceType.swift */,
-				2DAD813626552A670007064E /* UserInfoService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		2DAD824126565A0C0007064E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD7FE52653A6790007064E /* Endpoint.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		2DDADC1A2652BDD2000850E8 /* Network */ = {
@@ -139,8 +139,7 @@
 		2DDADC422652E2DA000850E8 /* Fetcher */ = {
 			isa = PBXGroup;
 			children = (
-				2DDADC282652BF91000850E8 /* DailyMotionFetcher.swift */,
-				2DDADC3E2652E2D5000850E8 /* GithubFetcher.swift */,
+				2DDADC282652BF91000850E8 /* Fetcher.swift */,
 				2DDADC1B2652BDE3000850E8 /* IFetcher.swift */,
 			);
 			path = Fetcher;
@@ -226,9 +225,11 @@
 			buildPhases = (
 				653C7B53CFE4292FC1EC14A5 /* [CP] Check Pods Manifest.lock */,
 				2DE99E412652A83100C63F9D /* Headers */,
+				2DAD819D26563ABF0007064E /* SwiftLint */,
 				2DE99E422652A83100C63F9D /* Sources */,
 				2DE99E432652A83100C63F9D /* Frameworks */,
 				2DE99E442652A83100C63F9D /* Resources */,
+				2DAD819C265639540007064E /* Update Pod Version */,
 			);
 			buildRules = (
 			);
@@ -314,6 +315,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2DAD819C265639540007064E /* Update Pod Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Pod Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MODULE_NAME=`basename \"$PWD\"`\n\nbuildVersion=`grep '  s\\.version      = ' $MODULE_NAME.podspec | grep -o '[0-9]*\\.[0-9]*\\.[0-9]*'`\nbuildVersionArray=(${buildVersion//./ })\nbuildNumber=${buildVersionArray[2]}\nbuildNumber=$(($buildNumber + 1))\n\nupdatedBuildVersion=`echo ${buildVersionArray[0]}.${buildVersionArray[1]}.$buildNumber`\n\nsed -i.backup \"s/  s\\.version      = \\\"$buildVersion\\\"/  s\\.version      = \\\"$updatedBuildVersion\\\"/g\" ${MODULE_NAME}.podspec\n";
+		};
+		2DAD819D26563ABF0007064E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		3CB1FCA7099FC5293213CFBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,18 +423,15 @@
 				2DDADC442652E36E000850E8 /* GithubUser.swift in Sources */,
 				2DDADC312652C05D000850E8 /* NetworkServiceLogger.swift in Sources */,
 				2DDADC2D2652C013000850E8 /* Link.swift in Sources */,
+				2DAD8188265635680007064E /* NetworkServiceProtocol.swift in Sources */,
 				2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */,
-				2DDADC3F2652E2D5000850E8 /* GithubFetcher.swift in Sources */,
 				2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */,
 				2DDADC392652DC18000850E8 /* UserError.swift in Sources */,
 				2DAD7FDC2653960F0007064E /* URLRequestBuilder.swift in Sources */,
 				2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */,
 				2DDADC1C2652BDE3000850E8 /* IFetcher.swift in Sources */,
 				2DDADC352652DB99000850E8 /* IUser.swift in Sources */,
-				2DAD813726552A670007064E /* UserInfoService.swift in Sources */,
-				2DAD8131265528A60007064E /* ServiceType.swift in Sources */,
-				2DDADC152652BCD4000850E8 /* UserData.swift in Sources */,
-				2DDADC292652BF91000850E8 /* DailyMotionFetcher.swift in Sources */,
+				2DDADC292652BF91000850E8 /* Fetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@ extension UsersAPIs {
         switch self {
         case .getUsers(let endpoint):
             return endpoint.path
-        case .downloadImages(_):
+        case .downloadImages:
             return nil
         }
     }
@@ -35,7 +35,7 @@ extension UsersAPIs {
         switch self {
         case .getUsers(let endpoint):
             return endpoint.parameters
-        case .downloadImages(_):
+        case .downloadImages:
             return nil
         }
     }
