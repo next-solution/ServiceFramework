@@ -7,7 +7,7 @@
 
 import Alamofire
 
-public enum Endpoint {
+public enum Endpoint: String {
     case dailyMotion
     case gitHub
 }

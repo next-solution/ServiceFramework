@@ -14,16 +14,36 @@ public class Fetcher: IFetcher {
         return fetcher
     }()
     
-    public func fetchInfoAboutUsers(endpoint: Endpoint, completion: @escaping (Result<[IUser], UserError>) -> Void) {
-        switch endpoint {
-        case .dailyMotion:
-            fetchUsersFromDailyMotion() { result in
-                completion(result)
+    public func fetchInfoAboutUsers(completion: @escaping ([(endpoint: Endpoint, users: Result<[IUser], UserError>)]) -> Void) {
+        var dailyMotionResult: Result<[IUser], UserError> = .success([])
+        var gitHubResult: Result<[IUser], UserError> = .success([])
+        
+        let dispatchGroup = DispatchGroup()
+        
+        dispatchGroup.enter()
+        fetchUsersFromDailyMotion() { result in
+            switch result {
+            case .success(let users):
+                dailyMotionResult = .success(users)
+            case .failure(let error):
+                dailyMotionResult = .failure(error)
             }
-        case .gitHub:
-            fetchUsersFromGithub() { result in
-                completion(result)
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        fetchUsersFromGithub() { result in
+            switch result {
+            case .success(let users):
+                gitHubResult = .success(users)
+            case .failure(let error):
+                gitHubResult = .failure(error)
             }
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.notify(queue: DispatchQueue.main) {
+            completion([(.dailyMotion, dailyMotionResult), (.gitHub, gitHubResult)])
         }
     }
     

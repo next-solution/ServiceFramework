@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ServiceFramework'
-  s.version      = "0.0.24"
+  s.version      = "0.0.26"
   s.summary      = 'ServiceFramework.'
   s.description  = 'ServiceFramework library.'
   s.license      = { :type => 'CUSTOM' }

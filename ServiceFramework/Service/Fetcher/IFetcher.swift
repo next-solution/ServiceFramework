@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol IFetcher {
-    func fetchInfoAboutUsers(endpoint: Endpoint, completion: @escaping (Result<[IUser], UserError>) -> Void)
+    func fetchInfoAboutUsers(completion: @escaping ([(endpoint: Endpoint, users: Result<[IUser], UserError>)]) -> Void)
     func fetchAvatar(url: URL, completion: @escaping (Result<Data, UserError>) -> Void)
 }
 
