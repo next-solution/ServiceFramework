@@ -7,16 +7,17 @@
 
 import Alamofire
 
-public class Fetcher: IFetcher {
+public class Fetcher: FetcherProtocol {
     
-    public static let `default`: Fetcher = {
-        let fetcher = Fetcher()
-        return fetcher
-    }()
+    private let networkService: NetworkServiceProtocol
     
-    public func fetchInfoAboutUsers(completion: @escaping ([(endpoint: Endpoint, users: Result<[IUser], UserError>)]) -> Void) {
-        var dailyMotionResult: Result<[IUser], UserError> = .success([])
-        var gitHubResult: Result<[IUser], UserError> = .success([])
+    init(networkService: NetworkServiceProtocol) {
+        self.networkService = networkService
+    }
+    
+    public func fetchInfoAboutUsers(completion: @escaping ([(endpoint: Endpoint, users: Result<[User], UserError>)]) -> Void) {
+        var dailyMotionResult: Result<[User], UserError> = .success([])
+        var gitHubResult: Result<[User], UserError> = .success([])
         
         let dispatchGroup = DispatchGroup()
         
@@ -59,7 +60,7 @@ public class Fetcher: IFetcher {
         }
     }
     
-    private func fetchUsersFromDailyMotion(completion: @escaping (Result<[IUser], UserError>) -> Void) {
+    private func fetchUsersFromDailyMotion(completion: @escaping (Result<[User], UserError>) -> Void) {
         networkService.execute(UsersAPIs.getUsers(.dailyMotion), model: DailyMotionUsers.self) { result in
             switch result {
             case .success(let users):
@@ -71,7 +72,7 @@ public class Fetcher: IFetcher {
         }
     }
     
-    private func fetchUsersFromGithub(completion: @escaping (Result<[IUser], UserError>) -> Void) {
+    private func fetchUsersFromGithub(completion: @escaping (Result<[User], UserError>) -> Void) {
         networkService.execute(UsersAPIs.getUsers(.gitHub), model: [GithubUser].self) { result in
             switch result {
             case .success(let users):

@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct DailyMotionUsers: Codable {
+struct DailyMotionUsers: Codable, Equatable {
     let list: [DailyMotionUser]
 }
 
-struct DailyMotionUser: IUser {
+struct DailyMotionUser: Equatable, User {
     var username: String
     var avatarUrl: String
     

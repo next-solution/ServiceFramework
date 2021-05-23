@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GithubUser: IUser {
+struct GithubUser: Equatable, User {
     var username: String
     var avatarUrl: String
     

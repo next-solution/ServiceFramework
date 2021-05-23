@@ -7,6 +7,7 @@ target 'ServiceFramework' do
 
   pod 'SwiftLint'
   pod 'Swinject'
+  pod 'Mocker'
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'CocoaLumberjack'
