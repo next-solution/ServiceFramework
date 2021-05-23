@@ -5,8 +5,11 @@ target 'ServiceFramework' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'SwiftLint'
   pod 'Swinject'
+  pod 'Mocker'
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'CocoaLumberjack'
 
   target 'ServiceFrameworkTests' do

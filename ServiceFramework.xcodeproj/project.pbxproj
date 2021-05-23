@@ -8,16 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		261B616AB8445D54611ADD0E /* Pods_ServiceFramework_ServiceFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F045E2F81A5143255B11FF /* Pods_ServiceFramework_ServiceFrameworkTests.framework */; };
-		2DDADC112652BC5B000850E8 /* IDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC102652BC5B000850E8 /* IDataFetcher.swift */; };
-		2DDADC152652BCD4000850E8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC142652BCD4000850E8 /* UserData.swift */; };
-		2DDADC1C2652BDE3000850E8 /* IApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC1B2652BDE3000850E8 /* IApiClient.swift */; };
+		2D467DF5265A1A3900416513 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D467DF4265A1A3900416513 /* NetworkServiceMock.swift */; };
+		2DAD7FDC2653960F0007064E /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */; };
+		2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE1265398B30007064E /* UsersAPIs.swift */; };
+		2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE52653A6790007064E /* Endpoint.swift */; };
+		2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD7FE92653A8190007064E /* NetworkService.swift */; };
+		2DAD8188265635680007064E /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD8187265635680007064E /* NetworkServiceProtocol.swift */; };
+		2DB9F56D265AFCD800B1996F /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB9F56C265AFCD800B1996F /* NetworkAssembly.swift */; };
+		2DB9F571265AFD0F00B1996F /* FetcherAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB9F570265AFD0F00B1996F /* FetcherAssembly.swift */; };
+		2DB9F587265B007F00B1996F /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB9F586265B007F00B1996F /* Assembler.swift */; };
+		2DDADC1C2652BDE3000850E8 /* FetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC1B2652BDE3000850E8 /* FetcherProtocol.swift */; };
 		2DDADC212652BEB1000850E8 /* DailyMotionUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */; };
-		2DDADC252652BEDE000850E8 /* DailyMotionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC242652BEDE000850E8 /* DailyMotionError.swift */; };
-		2DDADC292652BF91000850E8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC282652BF91000850E8 /* ApiClient.swift */; };
+		2DDADC292652BF91000850E8 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC282652BF91000850E8 /* Fetcher.swift */; };
 		2DDADC2D2652C013000850E8 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC2C2652C013000850E8 /* Link.swift */; };
-		2DDADC312652C05D000850E8 /* ApiClientLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC302652C05D000850E8 /* ApiClientLogger.swift */; };
+		2DDADC312652C05D000850E8 /* NetworkServiceLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */; };
+		2DDADC352652DB99000850E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC342652DB99000850E8 /* User.swift */; };
+		2DDADC392652DC18000850E8 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC382652DC18000850E8 /* UserError.swift */; };
+		2DDADC442652E36E000850E8 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDADC432652E36E000850E8 /* GithubUser.swift */; };
 		2DE99E502652A83100C63F9D /* ServiceFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE99E462652A83100C63F9D /* ServiceFramework.framework */; };
-		2DE99E552652A83100C63F9D /* ServiceFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE99E542652A83100C63F9D /* ServiceFrameworkTests.swift */; };
+		2DE99E552652A83100C63F9D /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE99E542652A83100C63F9D /* NetworkTests.swift */; };
 		2DE99E572652A83100C63F9D /* ServiceFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE99E492652A83100C63F9D /* ServiceFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE0F8C05CCA0BB566F0D1F7C /* Pods_ServiceFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C34B240F3EA193072C1E41 /* Pods_ServiceFramework.framework */; };
 /* End PBXBuildFile section */
@@ -33,19 +42,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2DDADC102652BC5B000850E8 /* IDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDataFetcher.swift; sourceTree = "<group>"; };
-		2DDADC142652BCD4000850E8 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		2DDADC1B2652BDE3000850E8 /* IApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApiClient.swift; sourceTree = "<group>"; };
+		2D467DF4265A1A3900416513 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		2DAD7FE1265398B30007064E /* UsersAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPIs.swift; sourceTree = "<group>"; };
+		2DAD7FE52653A6790007064E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2DAD7FE92653A8190007064E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2DAD8187265635680007064E /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		2DB9F56C265AFCD800B1996F /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
+		2DB9F570265AFD0F00B1996F /* FetcherAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetcherAssembly.swift; sourceTree = "<group>"; };
+		2DB9F586265B007F00B1996F /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		2DDADC1B2652BDE3000850E8 /* FetcherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetcherProtocol.swift; sourceTree = "<group>"; };
 		2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionUsers.swift; sourceTree = "<group>"; };
-		2DDADC242652BEDE000850E8 /* DailyMotionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMotionError.swift; sourceTree = "<group>"; };
-		2DDADC282652BF91000850E8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		2DDADC282652BF91000850E8 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		2DDADC2C2652C013000850E8 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
-		2DDADC302652C05D000850E8 /* ApiClientLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientLogger.swift; sourceTree = "<group>"; };
+		2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLogger.swift; sourceTree = "<group>"; };
+		2DDADC342652DB99000850E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2DDADC382652DC18000850E8 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		2DDADC432652E36E000850E8 /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
 		2DE99E462652A83100C63F9D /* ServiceFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ServiceFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE99E492652A83100C63F9D /* ServiceFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceFramework.h; sourceTree = "<group>"; };
 		2DE99E4A2652A83100C63F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DE99E4F2652A83100C63F9D /* ServiceFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DE99E542652A83100C63F9D /* ServiceFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFrameworkTests.swift; sourceTree = "<group>"; };
+		2DE99E542652A83100C63F9D /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		2DE99E562652A83100C63F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6D6FC7678C6C82B653A66F /* Pods-ServiceFramework-ServiceFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceFramework-ServiceFrameworkTests.debug.xcconfig"; path = "Target Support Files/Pods-ServiceFramework-ServiceFrameworkTests/Pods-ServiceFramework-ServiceFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		51760B8736ADD6D6E90E637D /* Pods-ServiceFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceFramework.release.xcconfig"; path = "Target Support Files/Pods-ServiceFramework/Pods-ServiceFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,25 +94,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DAD7FDA265395FA0007064E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2DDADC302652C05D000850E8 /* NetworkServiceLogger.swift */,
+				2DAD7FDB2653960F0007064E /* URLRequestBuilder.swift */,
+				2DAD7FE1265398B30007064E /* UsersAPIs.swift */,
+				2DAD8187265635680007064E /* NetworkServiceProtocol.swift */,
+				2DAD7FE92653A8190007064E /* NetworkService.swift */,
+				2D467DF4265A1A3900416513 /* NetworkServiceMock.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2DAD812B265528520007064E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD824126565A0C0007064E /* Enums */,
+				2DDADC422652E2DA000850E8 /* Fetcher */,
+				2DDADC342652DB99000850E8 /* User.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2DAD824126565A0C0007064E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD7FE52653A6790007064E /* Endpoint.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		2DB9F541265AF9A300B1996F /* IoC */ = {
+			isa = PBXGroup;
+			children = (
+				2DB9F56C265AFCD800B1996F /* NetworkAssembly.swift */,
+				2DB9F570265AFD0F00B1996F /* FetcherAssembly.swift */,
+				2DB9F586265B007F00B1996F /* Assembler.swift */,
+			);
+			path = IoC;
+			sourceTree = "<group>";
+		};
 		2DDADC1A2652BDD2000850E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2DDADC1F2652BE7C000850E8 /* Models */,
-				2DDADC1B2652BDE3000850E8 /* IApiClient.swift */,
-				2DDADC282652BF91000850E8 /* ApiClient.swift */,
 				2DDADC2C2652C013000850E8 /* Link.swift */,
-				2DDADC302652C05D000850E8 /* ApiClientLogger.swift */,
+				2DDADC1F2652BE7C000850E8 /* Model */,
+				2DAD7FDA265395FA0007064E /* Client */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		2DDADC1F2652BE7C000850E8 /* Models */ = {
+		2DDADC1F2652BE7C000850E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2DDADC202652BEB1000850E8 /* DailyMotionUsers.swift */,
-				2DDADC242652BEDE000850E8 /* DailyMotionError.swift */,
+				2DDADC432652E36E000850E8 /* GithubUser.swift */,
+				2DDADC382652DC18000850E8 /* UserError.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DDADC422652E2DA000850E8 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				2DDADC282652BF91000850E8 /* Fetcher.swift */,
+				2DDADC1B2652BDE3000850E8 /* FetcherProtocol.swift */,
+			);
+			path = Fetcher;
 			sourceTree = "<group>";
 		};
 		2DE99E3C2652A83100C63F9D = {
@@ -120,11 +187,11 @@
 		2DE99E482652A83100C63F9D /* ServiceFramework */ = {
 			isa = PBXGroup;
 			children = (
+				2DB9F541265AF9A300B1996F /* IoC */,
+				2DAD812B265528520007064E /* Service */,
 				2DDADC1A2652BDD2000850E8 /* Network */,
 				2DE99E492652A83100C63F9D /* ServiceFramework.h */,
 				2DE99E4A2652A83100C63F9D /* Info.plist */,
-				2DDADC102652BC5B000850E8 /* IDataFetcher.swift */,
-				2DDADC142652BCD4000850E8 /* UserData.swift */,
 			);
 			path = ServiceFramework;
 			sourceTree = "<group>";
@@ -132,7 +199,7 @@
 		2DE99E532652A83100C63F9D /* ServiceFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				2DE99E542652A83100C63F9D /* ServiceFrameworkTests.swift */,
+				2DE99E542652A83100C63F9D /* NetworkTests.swift */,
 				2DE99E562652A83100C63F9D /* Info.plist */,
 			);
 			path = ServiceFrameworkTests;
@@ -178,9 +245,11 @@
 			buildPhases = (
 				653C7B53CFE4292FC1EC14A5 /* [CP] Check Pods Manifest.lock */,
 				2DE99E412652A83100C63F9D /* Headers */,
+				2DAD819D26563ABF0007064E /* SwiftLint */,
 				2DE99E422652A83100C63F9D /* Sources */,
 				2DE99E432652A83100C63F9D /* Frameworks */,
 				2DE99E442652A83100C63F9D /* Resources */,
+				2DAD819C265639540007064E /* Update Pod Version */,
 			);
 			buildRules = (
 			);
@@ -266,6 +335,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2DAD819C265639540007064E /* Update Pod Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Pod Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MODULE_NAME=`basename \"$PWD\"`\n\nbuildVersion=`grep '  s\\.version      = ' $MODULE_NAME.podspec | grep -o '[0-9]*\\.[0-9]*\\.[0-9]*'`\nbuildVersionArray=(${buildVersion//./ })\nbuildNumber=${buildVersionArray[2]}\nbuildNumber=$(($buildNumber + 1))\n\nupdatedBuildVersion=`echo ${buildVersionArray[0]}.${buildVersionArray[1]}.$buildNumber`\n\nsed -i.backup \"s/  s\\.version      = \\\"$buildVersion\\\"/  s\\.version      = \\\"$updatedBuildVersion\\\"/g\" ${MODULE_NAME}.podspec\n";
+		};
+		2DAD819D26563ABF0007064E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		3CB1FCA7099FC5293213CFBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,13 +440,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDADC212652BEB1000850E8 /* DailyMotionUsers.swift in Sources */,
-				2DDADC312652C05D000850E8 /* ApiClientLogger.swift in Sources */,
+				2DB9F571265AFD0F00B1996F /* FetcherAssembly.swift in Sources */,
+				2DB9F56D265AFCD800B1996F /* NetworkAssembly.swift in Sources */,
+				2DDADC442652E36E000850E8 /* GithubUser.swift in Sources */,
+				2DDADC312652C05D000850E8 /* NetworkServiceLogger.swift in Sources */,
 				2DDADC2D2652C013000850E8 /* Link.swift in Sources */,
-				2DDADC1C2652BDE3000850E8 /* IApiClient.swift in Sources */,
-				2DDADC112652BC5B000850E8 /* IDataFetcher.swift in Sources */,
-				2DDADC252652BEDE000850E8 /* DailyMotionError.swift in Sources */,
-				2DDADC152652BCD4000850E8 /* UserData.swift in Sources */,
-				2DDADC292652BF91000850E8 /* ApiClient.swift in Sources */,
+				2DAD8188265635680007064E /* NetworkServiceProtocol.swift in Sources */,
+				2DAD7FEA2653A8190007064E /* NetworkService.swift in Sources */,
+				2DAD7FE2265398B30007064E /* UsersAPIs.swift in Sources */,
+				2DDADC392652DC18000850E8 /* UserError.swift in Sources */,
+				2DAD7FDC2653960F0007064E /* URLRequestBuilder.swift in Sources */,
+				2DAD7FE62653A6790007064E /* Endpoint.swift in Sources */,
+				2DB9F587265B007F00B1996F /* Assembler.swift in Sources */,
+				2DDADC1C2652BDE3000850E8 /* FetcherProtocol.swift in Sources */,
+				2DDADC352652DB99000850E8 /* User.swift in Sources */,
+				2D467DF5265A1A3900416513 /* NetworkServiceMock.swift in Sources */,
+				2DDADC292652BF91000850E8 /* Fetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE99E552652A83100C63F9D /* ServiceFrameworkTests.swift in Sources */,
+				2DE99E552652A83100C63F9D /* NetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 760753F5CCE85F0C4FBB582F /* Pods-ServiceFramework.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -516,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51760B8736ADD6D6E90E637D /* Pods-ServiceFramework.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -8,6 +8,6 @@
 import Foundation
 
 struct Link {
-     static let dailyMotionUrl = "https://api.dailymotion.com/users?fields=avatar_360_url,username"
-     static let gitHubUrl = "https://api.github.com/users"
+    static let dailyMotionUrl: URL = URL(string: "https://api.dailymotion.com")!
+    static let gitHubUrl: URL = URL(string: "https://api.github.com")!
  }
